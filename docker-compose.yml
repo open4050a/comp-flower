@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+
+    web:
+        build: "./docker"
+        container_name: "training-flower-cafe"
+        ports:
+            - "80:80"
+        volumes:
+            - "./public/:/var/www/html/"
